@@ -19,10 +19,10 @@ This Platform contains multiple commands which allows you to use keploy for ``re
 
 # Commands-Available:
 ```bash
-    record
+record
 ```
 Used for recording the test-cases.
 ```bash
-    test
+test
 ```
 Used for testing the test-cases on the platform it-self.
