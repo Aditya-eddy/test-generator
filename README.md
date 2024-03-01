@@ -17,7 +17,7 @@ It will connected to Kubernetes backend platform.
 ## Commands:
 This Platform contains multiple commands which allows you to use keploy for ``recording``,``testing`` and configuring the ``test-cases``
 
-# Commands-Available:
+### Commands-Available:
 ```bash
 record
 ```
