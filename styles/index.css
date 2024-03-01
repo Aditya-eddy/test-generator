@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write you own custom component styles here */
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
+
+.has-text-align-left {
+  @apply text-left;
+}
+
+.has-text-align-center {
+  @apply text-center;
+}
+
+.has-text-align-right {
+  @apply text-right;
+}
+
+.has-large-font-size {
+  @apply text-4xl;
+}
+
+.alignfull {
+  @apply w-screen relative;
+
+  left: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  max-width: 100vw;
+  right: 50%;
+}
+
+.wp-block-image img {
+  @apply max-w-full mt-2;
+}
+.wp-block-image.aligncenter {
+  @apply text-center;
+}
+.wp-block-image.alignfull img,
+.wp-block-image.alignwide img {
+  @apply w-full;
+}
+.wp-block-image .alignleft,
+.wp-block-image .alignright,
+.wp-block-image .aligncenter,
+.wp-block-image.is-resized {
+  @apply table ml-0 mr-0;
+}
+.wp-block-image .alignleft > figcaption,
+.wp-block-image .alignright > figcaption,
+.wp-block-image .aligncenter > figcaption,
+.wp-block-image.is-resized > figcaption {
+  @apply table-caption;
+
+  caption-side: bottom;
+}
+
+.wp-block-image .alignleft {
+  @apply float-left mr-4;
+}
+.wp-block-image .alignright {
+  @apply float-right ml-4;
+}
+.wp-block-image .aligncenter {
+  @apply m-auto;
+}
+
+.wp-block-button a,
+.wp-block-file a.wp-block-file__button {
+  @apply bg-blue-500 text-white no-underline py-2 px-4;
+}
+
+.wp-block-button a:hover,
+.wp-block-file a.wp-block-file__button:hover {
+  @apply bg-blue-400 cursor-pointer;
+}
+
+.wp-block-file a:first-of-type {
+  @apply mr-4;
+}
+
+.wp-block-cover {
+  @apply flex flex-wrap justify-center items-center bg-cover bg-center overflow-hidden;
+
+  min-height: 430px;
+}
+
+.wp-block-verse {
+  @apply font-sans;
+}
+
+.wp-block-media-text {
+  @apply grid grid-cols-2 gap-4;
+}
+
+/* Custom CSS */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto+Condensed:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Sixtyfour&display=swap');
+
+.kdam-thmor pro-regular {
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.heading1 {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.body {
+  font-family: "Lato", sans-serif;
+}
+
+
+body {
+  background: #fbfcff;
+  color: #222222;
+}
+.text-color{
+  color: #0F172A;
+}
+
+/* .title-link{
+  position: relative;
+  background-color: aqua;
+  background-position: 0 100%;
+  background-size: 0 10px;
+  transition: background .3s ease;
+} */
+.hamburger.active svg > :first-child {
+  opacity: 0;
+  y: 11;
+  transform: rotate(225deg);
+  transition: y 0.1s ease-out,
+    transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s,
+    opacity 0.1s ease-out 0.12s;
+}
+.hamburger svg > :first-child {
+  transition: y 0.1s ease-in 0.25s,
+    transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19), opacity 0.1s ease-in;
+}
+.hamburger.active svg > :nth-child(2) {
+  transform: rotate(225deg);
+  transition: transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+}
+.hamburger svg > :nth-child(2) {
+  transition: transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.hamburger.active svg > :nth-child(3) {
+  y: 11;
+  transform: rotate(135deg);
+  transition: y 0.1s ease-out,
+    transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s,
+    width 0.1s ease-out;
+}
+
+.hamburger svg > :nth-child(3) {
+  transition: y 0.1s ease-in 0.25s,
+    transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19),
+    width 0.1s ease-in 0.25s;
+}
+.hamburger svg > :first-child,
+.hamburger svg > :nth-child(2),
+.hamburger svg > :nth-child(3) {
+  transform-origin: center;
+  transform: rotate(0deg);
+}
+
+.spin-anim {
+  animation: 5s linear infinite spin;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+pre {
+  background-color: #222222 !important;
+  color: antiquewhite;
+}
+
+.footer-font{
+  font-family: '__Inter_e66fe9', '__Inter_Fallback_e66fe9', sans-serif;
+}
+
+.terminal {
+  height: 500px;
+  overflow-y: auto;
+  background-color: #000000;
+  color: #C4C4C4;
+  padding: 35px 45px;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.42;
+  font-family: 'IBM Plex Mono', Consolas, Menlo, Monaco, 'Courier New', Courier,
+  monospace;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.terminal__line {
+  line-height: 2;
+  white-space: pre-wrap;
+}
+
+.terminal__prompt {
+  display: flex;
+  align-items: center;
+}
+
+.terminal__prompt__label {
+  flex: 0 0 auto;
+  color: #F9EF00;
+}
+
+.terminal__prompt__input {
+  flex: 1;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.terminal__prompt__input input {
+  flex: 1;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  border: 0;
+  outline: none;
+  font-size: 14px;
+  line-height: 1.42;
+  font-family: 'IBM Plex Mono', Consolas, Menlo, Monaco, 'Courier New', Courier,
+  monospace;
+}
