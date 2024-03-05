@@ -38,6 +38,7 @@ const config: Config = {
           200: '#FFF',
           300: '#e6e2d4',
         },
+        monokai:'#272822',
         accent: {
           // Success messages, notifications, progress indicators
           100: '#16704c',

@@ -13,7 +13,6 @@ export const useTerminal = () => {
   );
 
   const [history, setHistory] = useState<TerminalHistory>([]);
-
   /**
    * Scroll to the bottom of the terminal when window is resized
    */
