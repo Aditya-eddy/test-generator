@@ -268,7 +268,7 @@ pre {
   scrollbar-width: none; /* Firefox */
 }
 .cm-editor.cm-focused {
-  outline: 2px solid white;
+  outline: 2px solid rgb(122, 121, 121);
   border-radius: 2px;
 }
 .cm-editor{
