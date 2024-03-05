@@ -53,7 +53,7 @@ function MainEditor({ lang }) {
       </div>
       <CodeMirror
         value={value}
-        minHeight="100vh"
+        height="100vh"
         theme={monokai}
         extensions={[javascript({ jsx: true }), StreamLanguage.define(go),]}
         onChange={onChange}
