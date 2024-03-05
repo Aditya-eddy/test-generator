@@ -50,7 +50,7 @@ export default function TestIndex() {
     <Layout>
       <Header />
       <Container>
-      <TypewriterEffectSmooth words={words} className="text-black" cursorClassName="text-black"/>
+      <TypewriterEffectSmooth words={words}/>
       <AnimatedCards test={Tests}/>
       </Container>
     </Layout>
